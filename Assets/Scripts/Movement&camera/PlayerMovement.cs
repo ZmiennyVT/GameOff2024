@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     private CharacterController controller;
     public float speed = 5f;
     public float turnSpeed = 180f;
-
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
 
         transform.Rotate(0, Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime, 0);
         movDir = transform.forward * Input.GetAxis("Vertical") * speed;
+        animator.SetBool("walking", movDir.magnitude > 0);
 
         controller.Move(movDir * Time.deltaTime - Vector3.up * 0.1f);
     }

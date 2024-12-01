@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.87, y: 6.71, z: 14}
-  m_LocalScale: {x: 4.328083, y: 4.328083, z: 4.328083}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3814455474627284074}
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15.1
   turnSpeed: 180
+  animator: {fileID: 4991693438886760655}
 --- !u!143 &3691547132394788602
 CharacterController:
   m_ObjectHideFlags: 0
@@ -308,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: protagonist_rigged_mixamo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5b60d301d9175ab47aadf94d6de4a07f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ff6453ccdf26c77418aa5f7fb9cb19a3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -316,5 +321,10 @@ PrefabInstance:
 --- !u!4 &1415856966298995381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5b60d301d9175ab47aadf94d6de4a07f, type: 3}
+  m_PrefabInstance: {fileID: 1453707297313189214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4991693438886760655 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5b60d301d9175ab47aadf94d6de4a07f, type: 3}
   m_PrefabInstance: {fileID: 1453707297313189214}
   m_PrefabAsset: {fileID: 0}
